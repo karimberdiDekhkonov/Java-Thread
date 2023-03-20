@@ -13,6 +13,7 @@ public class Fish extends Thread{
 
 
 
+    //Constructor orqali Baliq qiymatlarini o'rnatish jarayoin
     public Fish(String name, Gender gender) {
         this.name = name;
         this.gender = gender;
@@ -20,6 +21,7 @@ public class Fish extends Thread{
     }
 
     public void run(){
+        //Baliq hayotini boshlanish jarayoini
         System.out.println(name + " akvariumga qo'shildi");
         for (int i = 0; i < lifetime; i++) {
             age++;
